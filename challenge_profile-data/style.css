@@ -1,0 +1,149 @@
+/* Resets */
+body,p {
+    margin: unset;
+}
+
+h1, h2 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: none;
+    margin: unset;
+    padding: unset;
+}
+
+/* CSS Variables */
+:root {
+    --color-white: #fff;
+    --color-gray: #eaeaea;
+    --color-gray-50: #a8a8a8;
+    --color-pink: #ff1e93;
+}
+
+/* Layouts */
+.container {
+    height: 100vh;
+    padding: 40px;
+    box-sizing: border-box;
+
+    display: flex;
+}
+
+/* Components */
+body {
+    background-image: url(./images/background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card {
+    max-width: 800px;
+    width: 100%;
+    max-height: 840px;
+    height: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    max-height: 440px;
+    height: 100%;
+    flex-shrink: 0;
+    background-image: url(./images/cover04.png);
+    background-size: cover;
+    padding: 60px;
+    box-sizing: border-box;
+    color: var(--color-white);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-src {
+    width: 160px;
+    height: 160px;
+    border: 5px solid var(--color-white);
+    border-radius: 40%;
+}
+
+.header-title {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.header-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    border-top: 4px solid var(--color-white);
+    line-height: 2;
+    margin-top: 16px;
+}
+
+.card-main {
+    background-color: var(--color-gray);
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.main-plate {
+    background-color: var(--color-white);
+    padding: 18px;
+    background-repeat: no-repeat;
+    background-position: center right 30px;
+}
+
+.type_info {
+    background-image: url(./images/icon-information.png);
+}
+
+.type_skill {
+    background-image: url(./images/icon-skills.png);
+}
+
+.main-plate + .main-plate {
+    margin-top: 20px;
+}
+
+.plate-title {
+    color: var(--color-pink);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.plate-lists {
+    padding: 10px;
+    color: var(--color-gray-50);
+    font-size: 18px;
+}
+
+.listItem::before {
+    content: ' ';
+    background-color: var(--color-gray-50);
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: -8px;
+    margin-right: 4px;
+}
+
+.card-footer {
+    background-color: var(--color-white);
+    min-height: 50px;
+    flex-basis: 0;
+    flex-shrink: 0;
+}
+
+/* Mediaqueries */
